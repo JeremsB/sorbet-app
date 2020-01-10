@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/logo_sorbet_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:theme="@style/AppFullScreenTheme">
+        <activity android:name=".HomeActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
