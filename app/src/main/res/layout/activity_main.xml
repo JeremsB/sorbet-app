@@ -7,6 +7,13 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -61,7 +68,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="50dp"
             android:layout_weight="1"
             android:gravity="center_horizontal"
@@ -70,14 +77,23 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="260dp"
                 android:layout_weight="1"
+                android:background="@drawable/input"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/picto_personn" />
 
                 <EditText
                     android:id="@+id/txtPseudo"
-                    android:layout_width="match_parent"
+                    android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:width="300dp"
@@ -92,14 +108,24 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/input"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/lock" />
 
                 <EditText
                     android:id="@+id/txtPassword"
-                    android:layout_width="match_parent"
+                    android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:width="300dp"
@@ -115,14 +141,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|center_horizontal|center_vertical"
-                android:layout_marginTop="100dp"
                 android:layout_weight="1"
-                android:gravity="center_horizontal|center_vertical"
+                android:gravity="bottom|center_horizontal"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btnConnect"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:width="300dp"
