@@ -1,8 +1,10 @@
-package com.mds.sorbet;
+package com.mds.sorbet.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
+
+import com.mds.sorbet.R;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
