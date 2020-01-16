@@ -10,10 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.MainActivity"
-            android:theme="@style/AppFullScreenTheme">
-        </activity>
-        <activity
             android:name=".view.HomeActivity"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter>
@@ -21,6 +17,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:theme="@style/AppFullScreenTheme">
+        </activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:theme="@style/AppFullScreenTheme">
         </activity>
     </application>
 
