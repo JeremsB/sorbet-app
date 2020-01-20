@@ -6,9 +6,11 @@ import android.os.Bundle;
 
 import com.mds.sorbet.R;
 import android.content.Intent;
-import android.view.View;
+import android.view.MotionEvent;
 
 public class MainActivity extends AppCompatActivity {
+
+    float x1, x2, y1, y2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,16 +18,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void openLoginActivity(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(i   overridePendingTransition(R.anim.ntent);
-        slide_in_right, R.anim.slide_out_left);
-    }
-
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    public boolean onTouchEvent(MotionEvent touchEvent){
+        switch(touchEvent.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                x1 = touchEvent.getX();
+                y1 = touchEvent.getY();
+                break;
+            case MotionEvent.ACTION_UP:
+                x2 = touchEvent.getX();
+                y2 = touchEvent.getY();
+            if(x1 < x2) {
+                    Intent i = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(i);
+                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            } else if(x1 > x2){
+                    Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(i);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+            break;
+        }
+        return false;
     }
 
 }
