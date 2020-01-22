@@ -145,6 +145,7 @@
                     android:height="60dp"
                     android:background="@drawable/mybutton"
                     android:minWidth="88dp"
+                    android:onClick="openIndexActivity"
                     android:text="CONNECTE TOI !"
                     android:textColor="#FF978D"
                     android:textColorLink="#D81B60"

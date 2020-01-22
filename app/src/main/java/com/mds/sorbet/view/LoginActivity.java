@@ -3,6 +3,7 @@ package com.mds.sorbet.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,5 +36,10 @@ public class LoginActivity extends AppCompatActivity {
                 break;
         }
         return false;
+    }
+
+    public void openIndexActivity(View view) {
+        Intent intent = new Intent(this, IndexActivity.class);
+        startActivity(intent);
     }
 }
