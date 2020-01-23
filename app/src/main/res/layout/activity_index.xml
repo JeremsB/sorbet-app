@@ -66,15 +66,16 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="-80dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:padding="20dp">
 
                         <EditText
                             android:id="@+id/editText2"
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
-                            android:background="#FFFFFF"
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:text="Name lknd kjbd kjbd kjbd kjbd kjbd kjbd " />
