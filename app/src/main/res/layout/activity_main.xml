@@ -35,7 +35,7 @@
                     android:layout_width="344dp"
                     android:layout_height="125dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/logo_white" />
+                    app:srcCompat="@drawable/ic_logo" />
             </LinearLayout>
 
             <LinearLayout

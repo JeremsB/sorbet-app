@@ -28,7 +28,7 @@
                 android:layout_gravity="left"
                 android:layout_weight="1"
                 android:contentDescription="Logo de l'application"
-                app:srcCompat="@drawable/logo_white" />
+                app:srcCompat="@drawable/ic_logo" />
         </LinearLayout>
 
         <HorizontalScrollView
@@ -40,17 +40,17 @@
             android:layout_marginBottom="120dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="330dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:elevation="1dp">
@@ -64,18 +64,21 @@
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="-80dp"
                         android:layout_weight="1">
 
-                        <ImageView
-                            android:id="@+id/imageView16"
-                            android:layout_width="300dp"
-                            android:layout_height="195dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/fond_blanc" />
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="#FFFFFF"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="Name lknd kjbd kjbd kjbd kjbd kjbd kjbd " />
+
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -108,7 +111,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/sorbet" />
+                    app:srcCompat="@drawable/ic_boule_color" />
 
             </LinearLayout>
 
@@ -125,7 +128,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/more_white" />
+                    app:srcCompat="@drawable/ic_add" />
             </LinearLayout>
 
             <LinearLayout
@@ -141,7 +144,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/search_white" />
+                    app:srcCompat="@drawable/ic_search" />
             </LinearLayout>
 
             <LinearLayout
@@ -156,7 +159,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/people_white" />
+                    app:srcCompat="@drawable/ic_profil" />
             </LinearLayout>
 
         </LinearLayout>

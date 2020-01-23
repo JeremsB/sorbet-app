@@ -21,13 +21,16 @@
         </activity>
         <activity
             android:name=".view.MainActivity"
-            android:theme="@style/AppFullScreenTheme"></activity>
+            android:theme="@style/AppFullScreenTheme" />
         <activity
             android:name=".view.LoginActivity"
-            android:theme="@style/AppFullScreenTheme"></activity>
+            android:theme="@style/AppFullScreenTheme" />
         <activity
             android:name=".view.IndexActivity"
-            android:theme="@style/AppFullScreenTheme"></activity>
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".view.BetActivity"
+            android:theme="@style/AppFullScreenTheme" />
     </application>
 
 </manifest>
